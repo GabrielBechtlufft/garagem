@@ -50,4 +50,10 @@ public class VeiculoController {
         List<VeiculoMinDTO> result = garagemService.findByCor(cor);
         return result;
     }
+    
+    @GetMapping("/ano/{ano}")
+    public List<VeiculoMinDTO> findByAno (@PathVariable int ano){
+        List<VeiculoMinDTO> result = garagemService.findByAno(ano);
+        return result;
+    }
 }

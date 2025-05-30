@@ -33,8 +33,13 @@ public class VeiculoService {
         return result;
     }
     
-    public List<VeiculoMinDTO> findByColor(String cor) {
-        List<VeiculoMinDTO> result = garagemRepository.findByColor(cor);
+    public List<VeiculoMinDTO> findByCor(String cor) {
+        List<VeiculoMinDTO> result = garagemRepository.findByCor(cor);
+        return result;
+    }
+    
+    public List<VeiculoMinDTO> findByAno(int ano) {
+        List<VeiculoMinDTO> result = garagemRepository.findByAno(ano);
         return result;
     }
     

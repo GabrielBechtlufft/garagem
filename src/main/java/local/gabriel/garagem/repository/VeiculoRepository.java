@@ -17,5 +17,7 @@ public interface VeiculoRepository extends JpaRepository<Veiculo, Long> {
     
     List<Veiculo> findById(long id);
     
-    List<VeiculoMinDTO> findByColor (String cor);
+    List<VeiculoMinDTO> findByCor (String cor);
+    
+    List<VeiculoMinDTO> findByAno (int ano);
 }
