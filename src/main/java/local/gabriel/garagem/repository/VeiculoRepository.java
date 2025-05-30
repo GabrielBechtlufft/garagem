@@ -4,6 +4,8 @@
  */
 package local.gabriel.garagem.repository;
 
+import java.util.List;
+import local.gabriel.garagem.DTO.VeiculoMinDTO;
 import local.gabriel.garagem.entities.Veiculo;
 import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -11,6 +13,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
  *
  * @author ppjata
  */
-public interface GaragemRepository extends JpaRepository<Veiculo, Long> {
+public interface VeiculoRepository extends JpaRepository<Veiculo, Long> {
     
+    List<Veiculo> findById(long id);
+    
+    List<VeiculoMinDTO> findByColor (String cor);
 }

@@ -22,7 +22,7 @@ public class Veiculo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    
+
     private String marca;
     private String modelo;
     private String cor;
